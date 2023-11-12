@@ -24,6 +24,6 @@ describe('types', () => {
   });
 
   it('should be null', () => {
-    expect(typeof getNull()).equal('null');
+    expect(getNull()).null;
   });
 });
