@@ -103,12 +103,12 @@ describe('comparison operators', () => {
   });
 
   it('is first argument and its type not equal to second argument and type', () => {
-    expect(notEqual(2, 1)).equal(true);
-    expect(notEqual(10, 1)).equal(true);
-    expect(notEqual(1, -1)).equal(true);
-    expect(notEqual(1, 2)).equal(true);
-    expect(notEqual(-1, 1)).equal(true);
-    expect(notEqual(1, 1)).equal(false);
+    expect(notEqualAndNotEqualType(2, 1)).equal(true);
+    expect(notEqualAndNotEqualType(10, 1)).equal(true);
+    expect(notEqualAndNotEqualType(1, -1)).equal(true);
+    expect(notEqualAndNotEqualType(1, 2)).equal(true);
+    expect(notEqualAndNotEqualType(-1, 1)).equal(true);
+    expect(notEqualAndNotEqualType(1, 1)).equal(false);
     expect(notEqualAndNotEqualType('1', 1,)).equal(true);
     expect(notEqualAndNotEqualType('b', 'a')).equal(true);
     expect(notEqualAndNotEqualType('b', 'b')).equal(false);
